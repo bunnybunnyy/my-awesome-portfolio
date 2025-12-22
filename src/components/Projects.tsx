@@ -4,40 +4,41 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "CloudSync Dashboard",
+    title: "Real-Time Code Editor (Quick code)",
     description: "A real-time cloud infrastructure monitoring dashboard with live metrics, alerting, and team collaboration features.",
-    tech: ["React", "TypeScript", "GraphQL", "AWS"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["React.js", "Node.js", "Express", "WebRtc","Socket.io"],
+    github: "https://github.com/bunnybunnyy/Quick-Code",
+    live: "https://quickcodefy.netlify.app/",
     featured: true,
   },
   {
-    title: "DevFlow CLI",
+    title: "Web Spark Builder",
     description: "Command-line tool for automating development workflows, including project scaffolding and CI/CD integration.",
-    tech: ["Node.js", "TypeScript", "Shell"],
+    tech: ["React.js", "Laraval", "php","tailwind css","bootstrap"],
     github: "https://github.com",
-    live: null,
+    live: "https://websparkbuilders.com/",
     featured: true,
   },
   {
-    title: "Artisan Marketplace",
+    title: "My Portfolio",
     description: "E-commerce platform connecting artisans with customers, featuring secure payments and real-time inventory.",
-    tech: ["Next.js", "Prisma", "Stripe", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["React.js", "TypeScript", "Tailwind Css"],
+    github: "https://github.com/bunnybunnyy/my-awesome-portfolio",
+    live: "https://umarportfolioo.netlify.app/",
     featured: true,
   },
 ];
 
 const otherProjects = [
   {
-    title: "API Rate Limiter",
+    title: "Washing Mechine Repair",
     description: "Redis-based rate limiting middleware for Express applications",
-    tech: ["Node.js", "Redis"],
-    github: "https://github.com",
+    tech: ["React.js", "APIs"],
+    github: "https://github.com/bunnybunnyy/Automaticmachine",
+    live: ""
   },
   {
-    title: "Markdown Editor",
+    title: "physiotherapist website",
     description: "Real-time collaborative markdown editor with live preview",
     tech: ["React", "WebSocket"],
     github: "https://github.com",

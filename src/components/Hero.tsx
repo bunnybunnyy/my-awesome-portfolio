@@ -36,7 +36,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
             Hi, I'm{" "}
-            <span className="text-gradient">Alex Chen</span>
+            <span className="text-gradient">Muhammad Umar</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -80,7 +80,7 @@ const Hero = () => {
             className="flex items-center justify-center gap-4"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/bunnybunnyy"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-secondary hover:bg-secondary/80 hover:text-primary transition-all duration-300"
@@ -88,7 +88,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/muhammad-umar-b62810255/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-secondary hover:bg-secondary/80 hover:text-primary transition-all duration-300"
@@ -96,7 +96,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:hanifumar169@gmail.com"
               className="p-3 rounded-lg bg-secondary hover:bg-secondary/80 hover:text-primary transition-all duration-300"
             >
               <Mail className="h-5 w-5" />

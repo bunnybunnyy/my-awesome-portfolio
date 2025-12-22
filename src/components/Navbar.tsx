@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#" className="text-xl font-bold font-mono">
               <span className="text-primary">&lt;</span>
-              AC
+              Muhammad Umar
               <span className="text-primary">/&gt;</span>
             </a>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button variant="outline" size="sm" asChild>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
                   Resume
                 </a>
               </Button>

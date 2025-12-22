@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Palette, Zap } from "lucide-react";
+import { Code2, Palette, Zap, Users, Shield, Layers } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -18,6 +18,21 @@ const About = () => {
       title: "Performance",
       description: "Optimizing for speed without compromising user experience",
     },
+     {
+    icon: Users,
+    title: "Collaboration",
+    description: "Working effectively in teams and communicating technical concepts clearly",
+  },
+  {
+    icon: Shield,
+    title: "Security",
+    description: "Implementing robust security practices to protect user data",
+  },
+  {
+    icon: Layers,
+    title: "Full Stack",
+    description: "Expertise across frontend, backend, and infrastructure layers",
+  },
   ];
 
   return (
@@ -40,7 +55,7 @@ const About = () => {
             <span className="text-gradient">Reality</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            With over 5 years of experience in software development, I specialize in 
+            With over 3 years of experience in software development, I specialize in 
             building full-stack applications that are both beautiful and functional. 
             I'm passionate about creating seamless user experiences and writing code 
             that makes a difference.

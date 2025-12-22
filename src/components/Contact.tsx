@@ -14,14 +14,38 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
+ const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  // Your Gmail address
+  const yourEmail = 'hanifumar169@gmail.com'; // Replace with your actual Gmail
+
+  // Encode the subject and body for URL
+  const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
+  const body = encodeURIComponent(
+    `New Contact Form Submission:\n\n` +
+    `Name: ${formData.name}\n` +
+    `Email: ${formData.email}\n` +
+    `Message: ${formData.message}\n\n` +
+    `---\n` +
+    `This message was sent from your portfolio contact form.`
+  );
+
+  // Create mailto link
+  const mailtoUrl = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
+
+  // Open email client
+  window.location.href = mailtoUrl;
+
+  // Show toast notification
+  toast({
+    title: "Opening email client...",
+    description: "Please send the email to complete your message.",
+  });
+
+  // Reset form
+  setFormData({ name: "", email: "", message: "" });
+};
 
   return (
     <section id="contact" className="py-24 relative bg-secondary/20">
