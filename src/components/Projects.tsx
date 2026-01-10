@@ -20,6 +20,14 @@ const projects = [
     featured: true,
   },
   {
+    title: "Techexa Digital Services(Company Website) ",
+    description: "A company website for Techexa Digital Services, showcasing their services, portfolio, and contact information.",
+    tech: ["React.js", "API Integration", "Tailwind CSS", "typescript", "Emailjs"],
+    github: "https://github.com/bunnybunnyy/digital-canvas-studio",
+    live: "https://www.techexa.co.uk/",
+    featured: true,
+  },
+  {
     title: "Solar System",
     description: "An interactive solar calculator allowing users to choose solar panels, quantity, providers, and accessories to determine prices and plan their solar system efficiently.",
     tech: ["React.js", "API Integration", "Tailwind CSS", "Django", "MySQL"],
@@ -27,13 +35,14 @@ const projects = [
     live: "https://solarsystemcalc.vercel.app/",
     featured: true,
   },
+  
 ];
 
 const otherProjects = [
   {
     title: "My Portfolio",
     description: "A modern portfolio platform designed to highlight projects, skills, and achievements in a clean, professional layout.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS"],
+    tech: ["React.js", "TypeScript", "Tailwind CSS","Emailjs"],
     github: "https://github.com/bunnybunnyy/my-awesome-portfolio",
     live: "https://muhammad-umar-developer.vercel.app/",
     featured: true,
