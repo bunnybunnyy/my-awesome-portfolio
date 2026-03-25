@@ -179,133 +179,7 @@ const Hero = () => {
           />
         </div>
 
-        {/* Animated gradient orbs with modern colors */}
-        <motion.div
-          animate={{
-            x: [0, 150, 0],
-            y: [0, 100, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-10 left-10 w-96 h-96 rounded-full blur-3xl opacity-30"
-          style={{
-            background: 'linear-gradient(135deg, rgba(79, 209, 197, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%)',
-          }}
-        />
-        
-        <motion.div
-          animate={{
-            x: [0, -120, 0],
-            y: [0, 80, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.5
-          }}
-          className="absolute bottom-20 right-20 w-[500px] h-[500px] rounded-full blur-3xl opacity-25"
-          style={{
-            background: 'linear-gradient(225deg, rgba(59, 130, 246, 0.4) 0%, rgba(236, 72, 153, 0.3) 100%)',
-          }}
-        />
-
-        <motion.div
-          animate={{
-            x: [0, 80, 0],
-            y: [0, -60, 0],
-            scale: [1, 1.15, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute top-1/2 left-1/4 w-[400px] h-[400px] rounded-full blur-3xl opacity-20"
-          style={{
-            background: 'linear-gradient(45deg, rgba(251, 191, 36, 0.3) 0%, rgba(79, 209, 197, 0.3) 100%)',
-          }}
-        />
-
-        {/* Animated grid pattern overlay */}
-        <div 
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-          }}
-        />
-
-        {/* Floating particles effect */}
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full"
-            style={{
-              width: Math.random() * 4 + 2,
-              height: Math.random() * 4 + 2,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              background: `rgba(79, 209, 197, ${Math.random() * 0.5 + 0.2})`,
-              boxShadow: `0 0 ${Math.random() * 10 + 5}px rgba(79, 209, 197, 0.5)`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              x: [0, Math.random() * 20 - 10, 0],
-              opacity: [0.2, 0.6, 0.2],
-            }}
-            transition={{
-              duration: Math.random() * 3 + 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-
-        {/* Animated geometric shapes */}
-        <motion.div
-          animate={{
-            rotate: [0, 360],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute top-1/4 right-1/4 w-64 h-64 opacity-10"
-          style={{
-            background: 'linear-gradient(45deg, transparent 30%, rgba(79, 209, 197, 0.3) 50%, transparent 70%)',
-            clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)',
-          }}
-        />
-
-        <motion.div
-          animate={{
-            rotate: [360, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute bottom-1/4 left-1/4 w-48 h-48 opacity-10"
-          style={{
-            background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(59, 130, 246, 0.3) 100%)',
-            borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
-          }}
-        />
+       
         
         <div className="container relative z-10 px-4 py-20">
           <motion.div
@@ -410,7 +284,7 @@ const Hero = () => {
             >
               {[
                 { href: "https://github.com/bunnybunnyy", icon: Github, label: "GitHub" },
-                { href: "https://www.linkedin.com/in/muhammad-umar-b62810255/", icon: Linkedin, label: "LinkedIn" },
+                { href: "https://www.linkedin.com/in/muhammadumar16/", icon: Linkedin, label: "LinkedIn" },
                 { href: "mailto:hanifumar169@gmail.com", icon: Mail, label: "Email" },
               ].map((social, index) => (
                 <motion.a
